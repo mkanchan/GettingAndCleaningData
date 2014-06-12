@@ -47,7 +47,7 @@ write.table(subdata,"datafile1.txt",row.names=FALSE,col.names=TRUE,sep = " ",eol
 # read data generated from previous steps
 rawdata <- read.table("datafile1.txt",header=TRUE,sep=" ")
 library(plyr)
-# craere tidy data with mean of each column grouped by Subject and Activity Labels
+# craete tidy data with mean of each column grouped by Subject and Activity Labels
 groupColumns = c("activityLabel","Subject")
 dataColumns = c(1:79)
 tidydata <- ddply(rawdata,groupColumns, function(x) colMeans(x[dataColumns]))
