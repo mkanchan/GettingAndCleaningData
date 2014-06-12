@@ -1,0 +1,1 @@
+This file describes script file "run_analysis.R" and data files "datafile1.txt" and "tidyData.txt"
